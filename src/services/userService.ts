@@ -1,4 +1,5 @@
-import { login, LoginResponse } from "../api/api";
+import { login } from "../api/api";
+import type { LoginResponse } from "../api/api";
 
 export async function loginUser(username: string, password: string): Promise<LoginResponse> {
 	return await login(username, password);
