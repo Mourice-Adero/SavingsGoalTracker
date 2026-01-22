@@ -24,10 +24,15 @@ function HomePage() {
     <div className="flex items-center justify-center h-screen gap-4">
       <section className="bg-primary h-full w-1/2 relative">
         <img src="logo.svg" alt="logo" className="absolute top-8 left-8 h-20" />
-        <img src="/bg.png" alt="coverimage" className="h-full bg-cover" />
+        <img src="bg.png" alt="coverimage" className="h-full bg-cover" />
       </section>
-      <section className="w-1/2 p-10">
-        <div className="p-8 shadow-lg rounded-lg h-85vh flex flex-col justify-center gap-4">
+      <section className="w-1/2 p-10 ">
+        <div className="p-8 shadow-lg rounded-lg h-85vh flex flex-col justify-center gap-4 relative">
+          <img
+            src="green-leaves-white-background.png"
+            alt="greenleavesImage"
+            className="absolute top-0 right-0 h-50"
+          />
           <p className="subtitle1 pb-1 text-3xl">WELCOME TO</p>
           <p className="text-[#0ca85d] text-3xl">
             Inua Mkulima - <br />
@@ -72,7 +77,7 @@ function HomePage() {
                   <button
                     onClick={toggleViewPassword}
                     type="button"
-                    className="absolute right-0 top-2"
+                    className="absolute right-2 top-2"
                   >
                     <RiEyeLine />
                   </button>

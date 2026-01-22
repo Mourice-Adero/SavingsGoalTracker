@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import HomePage from "../pages/HomePage";
 import DashboardLayout from "../layouts/DashboardLayout";
-import Dashboard from "../layouts/DashboardLayout";
+import Dashboard from "../pages/Dashboard";
 import Reports from "../pages/Reports";
 import Receipts from "../pages/Receipts";
 import Logout from "../components/LogoutModal";
@@ -11,7 +11,7 @@ export const router = createBrowserRouter([
     path: "/dashboard",
     element: <DashboardLayout />,
     children: [
-      { index: true, element: <Dashboard /> },
+      { path: "", index: true, element: <Dashboard /> },
       { path: "transactions", element: <Reports /> },
       { path: "receipts", element: <Receipts /> },
     ],
