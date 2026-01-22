@@ -1,5 +1,6 @@
 import { RiArrowRightBoxFill, RiEye2Fill, RiEyeLine } from "react-icons/ri";
 import { useState } from "react";
+import { NavLink } from "react-router";
 
 function HomePage() {
   const [next, setNext] = useState(false);
@@ -83,10 +84,12 @@ function HomePage() {
                   </button>
                 </div>
 
-                <button className="btn-yellow hover:bg-yellow-700 text-white px-4 py-2 rounded-md w-full mt-4">
-                  Sign In
-                  <RiArrowRightBoxFill className="inline-block ml-2" />
-                </button>
+                <NavLink to="/dashboard">
+                  <button className="btn-yellow hover:bg-yellow-700 text-white px-4 py-2 rounded-md w-full mt-4">
+                    Sign In
+                    <RiArrowRightBoxFill className="inline-block ml-2" />
+                  </button>
+                </NavLink>
               </div>
             )}
           </form>
