@@ -13,7 +13,6 @@ function Dashboard() {
         const resp = await productService.fetchProducts();
         if (mounted) setProducts(resp.products || []);
       } catch (err) {
-        // eslint-disable-next-line no-console
         console.error("Failed to load products", err);
       }
     }
@@ -76,7 +75,7 @@ function Dashboard() {
                 {products.length === 0 && (
                   <tr>
                     <td colSpan={3} className="py-6 text-center text-gray-500">
-                      No products
+                      No products available
                     </td>
                   </tr>
                 )}
@@ -90,7 +89,7 @@ function Dashboard() {
           <div className="border rounded-xl bg-white p-4 min-h-[200px]">
             {selected.length === 0 ? (
               <div className="text-center text-gray-400 py-8">
-                Please select a products from the products panel first
+                Please select a product from the products panel first
               </div>
             ) : (
               <ul>

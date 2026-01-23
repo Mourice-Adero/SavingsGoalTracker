@@ -1,4 +1,3 @@
-// reusale button component
 import React from "react";
 
 interface ButtonProps {

@@ -36,9 +36,9 @@ function HomePage() {
     try {
       const resp = await userService.loginUser(username.trim(), password);
       if (resp?.token) {
-        localStorage.setItem("token", resp.token);
         navigate("/dashboard");
       } else {
+        console.warn("Login response did not include token:", resp);
         setError("Invalid login response");
       }
     } catch (err: any) {
