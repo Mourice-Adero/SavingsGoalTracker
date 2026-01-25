@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  /* Colors: */
   --unnamed-color-ffffff: #ffffff;
   --unnamed-color-0ca85d: #0ca85d;
   --unnamed-color-2b87e3: #2b87e3;
@@ -8,6 +9,7 @@
   --unnamed-color-9f43cc: #9f43cc;
   --unnamed-color-3e3e3e: #3e3e3e;
 
+  /* Font/text values */
   --unnamed-font-family-poppins: Poppins;
   --unnamed-font-style-normal: normal;
   --unnamed-font-weight-normal: normal;
@@ -18,8 +20,10 @@
 }
 
 body {
+  /* font-family: var(--unnamed-font-family-poppins); */
 }
 
+/* Character Styles */
 .subtitle1 {
   font-family: var(--unnamed-font-family-poppins);
   font-style: var(--unnamed-font-style-normal);
@@ -39,6 +43,7 @@ body {
   color: var(--unnamed-color-3e3e3e);
 }
 
+/* Global Styles */
 .bg-primary {
   background-color: var(--unnamed-color-ffffff);
 }
